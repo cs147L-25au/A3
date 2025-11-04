@@ -51,7 +51,7 @@ export default function Login() {
           name="bee-flower"
           color={Theme.colors.iconHighlighted}
         />
-        <Text style={styles.splashText}>Buzz</Text>
+        <Text style={styles.splashText}>Fizz</Text>
       </View>
       <TextInput
         onChangeText={(text) => setEmail(text)}
