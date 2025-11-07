@@ -115,13 +115,17 @@ export type Database = {
           like_count: number
           text: string
           timestamp: string
+          user_id: string | null
           username: string | null
         }
         Relationships: []
       }
     }
     Functions: {
-      [_ in never]: never
+      create_user: {
+        Args: { email: string; password: string; uuid?: string }
+        Returns: undefined
+      }
     }
     Enums: {
       [_ in never]: never
