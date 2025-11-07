@@ -65,6 +65,9 @@ export default function FeedList({
   return (
     <FlatList
       data={posts}
+      keyExtractor={(item) =>
+        `${item.id}-${item.like_count}-${item.current_user_vote}`
+      }
       renderItem={({ item }) => (
         <Post
           shouldNavigateOnPress={shouldNavigateToComments}
