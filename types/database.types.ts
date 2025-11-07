@@ -115,7 +115,7 @@ export type Database = {
           like_count: number
           text: string
           timestamp: string
-          user_id: string | null
+          user_id: string
           username: string | null
         }
         Relationships: []
