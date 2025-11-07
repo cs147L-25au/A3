@@ -30,6 +30,7 @@ type LocalSearchParamsType = {
   like_count: string;
   current_user_vote: string;
   comment_count: string;
+  user_id: string;
 };
 
 export default function Details() {
@@ -48,6 +49,7 @@ export default function Details() {
     like_count: Number(localSearchParams.like_count),
     current_user_vote: Number(localSearchParams.current_user_vote),
     comment_count: Number(localSearchParams.comment_count),
+    user_id: localSearchParams.user_id,
   };
 
   const submitComment = async () => {
